@@ -34,6 +34,8 @@ This will trigger `py.test <http://pytest.org/latest/>`_, along with its popular
 To execute the application, you should run the following command::
 
     $ movirecommender <number_movies> <file_path>
+    
+If you want to see an example of file, `click here <https://github.com/jefmoura/m-recommender-cli/blob/master/tests/test.json>`_!
 
 Extra
 -----
