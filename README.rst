@@ -34,7 +34,29 @@ This will trigger `py.test <http://pytest.org/latest/>`_, along with its popular
 To execute the application, you should run the following command::
 
     $ movirecommender <number_movies> <file_path>
-    
+
+File structure
+--------------
+The structure of the file that you have to pass to the program is pretty simple. It has to be a JSON like this:
+
+.. code-block::
+
+  {
+      "movies": {           <--- Dict listing all the movies
+          "1": "Movie 1",   <--- "id": "name"
+          "2": "Movie 2", 
+      }, 
+      "users": [            <--- Array listing all the users
+          {                 <--- Dict describing an user
+              "movies": [   <--- Array listing the movies watched by the user
+                  2,        <--- ID of the movie
+                  1
+              ], 
+              "user_id": 1  <--- ID of the user
+          }
+      ]
+  }
+
 If you want to see an example of file, `click here <https://github.com/jefmoura/m-recommender-cli/blob/master/tests/test.json>`_!
 
 Extra
